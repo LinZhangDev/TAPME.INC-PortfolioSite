@@ -1,0 +1,134 @@
+@font-face{
+    font-family: cyberfont;
+    src: url('../fonts/cyberfont.ttf');
+}
+
+#contact{
+    padding: 0;
+    height:1000px;
+    display:flex;
+    align-items: top;
+    justify-content: center;
+    overflow: hidden;
+    background-color:#1a1a1a;
+    background-size: cover;
+}
+
+.contact-msg{
+    margin-top: 10%;
+    width: 550px;
+    height: 1000px;
+}
+
+.contact-msg h1{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+    font-family: cyberfont;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-msg-wrap{
+    overflow: hidden;
+    height: 450px;
+    width: 530px;
+    position: relative;
+    top:0px;
+    transition: all 1s ease-in-out .3s;
+}
+
+.contact-msg-wrap:before{
+    content: "";
+    position: absolute;
+    bottom: 105px;
+    left: 0px;
+    background-image: url("../img/msg-before.png");
+    width: 550px;
+    height: 320px;
+}
+
+.contact-msg-wrap:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("../img/msg-after.png");
+    width: 550px;
+    height: 240px;
+}
+
+.contact-msg-wrap.hide:before
+.contact-msg-wrap.hide:after{
+    display: none;
+}
+
+.contact-msg-wrap:hover{
+    height: 850px;
+    top:-200px;
+}
+
+.contact-msg-wrap form{
+    background-color: white;
+    position: relative;
+    top: 200px;
+    overflow: hidden;
+    height: 200px;
+    width: 450px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-right: 3px;
+    transition: all 1s ease-in-out .3s;
+}
+
+.contact-msg-wrap:hover form{
+    height: 550px;
+}
+
+.contact-msg-wrap label{
+    margin: 11px 20px 0 0;
+    font-size: 15px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+input[type=text],textarea{
+    font: 14px normal upercase, arial,serif;
+    color: black;
+    background: none;
+    width:410px;
+    height: 35px;
+    padding: 0px 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+}
+
+textarea{
+    height: 100px;
+    padding-top: 15px;
+}
+
+textarea:focus,input[type=text]:focus{
+    background-color:white;
+}
+
+.contact-msg-wrap input[type=submit]{
+    position: relative;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color:gray;
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.contact-msg-wrap input[type=submit]:hover{
+    background-color: #2E8B57;
+    color: white;
+    transition:.5s;
+}

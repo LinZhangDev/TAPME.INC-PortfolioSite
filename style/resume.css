@@ -1,0 +1,77 @@
+@font-face{
+    font-family: cyberfont;
+    src: url('../fonts/cyberfont.ttf');
+}
+
+#resume{
+    padding: 0;
+    height:850px;
+    display:flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color:#262626;
+    background-size: cover;
+}
+
+#resume h1{
+    z-index: 2;
+    position: absolute;
+    margin-top:0px;
+    font-family: cyberfont;
+    font-weight: bold;
+    color: white;
+}
+
+.resume-container{
+    margin-top:120px;
+    position: absolute;
+    width:1000px;
+    height:600px;
+    background-color: #262626;
+    box-shadow: 0 0 20px 20px lightblue;
+}
+
+.resume-container-icon{
+    float: left;
+    width:10%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+    align-self: flex-end; /*icon排到下面*/
+}
+
+.icons li{
+    list-style: none;
+    padding: 15px;
+    font-size: 30px;
+    color: white;
+}
+
+.icons li:hover{
+    color: pink;
+    transition: .3s;
+}
+
+.resume-info{
+    float: right;
+    width:85%;
+    height:100%;
+    right:0;
+}
+
+.resume-info-title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.resume-info-text{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
